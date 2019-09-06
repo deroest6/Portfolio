@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1024px" height="768px" viewBox="0 0 1024 768">
+<defs>
+<style type="text/css"> @import url(https://fonts.googleapis.com/css?family=Chau+Philomene+One:400:latin-ext); </style>
+</defs>
+<clipPath id="cp1">
+<path d="M 0,0 L 1024,0 L1024,768 L 0,768 z M 0,0 L 1197,0 L 1197,896 L 0,896 z" fill-rule="evenodd">
+</path>
+</clipPath>
+<g clip-path="url(#cp1)">
+</g>
+<rect x="0" y="0" width="1197" height="896" opacity="1" fill="#999" stroke="none">
+</rect>
+<text x="-217.1427001953125" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(510, 384)">GoogleAnalytics</text>
+<text x="-257.09527587890625" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(693, 486) rotate(-59.91484359520387)">Web-Development</text>
+<text x="-227.95217895507812" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(297, 291) rotate(-60.97158004185965)">ChromeDevTools</text>
+<text x="-214.599365234375" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(546, 312)">GoogleAdwords</text>
+<text x="-132.9632568359375" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(510, 444)">Javascript</text>
+<text x="-154.79409790039062" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(474, 504)">Responsive</text>
+<text x="-135.61265563964844" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(495, 252)">Bootstrap</text>
+<text x="-138.1560516357422" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(495, 648) rotate(-42.30157220384877)">Front-End</text>
+<text x="-136.4251251220703" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(558, 192)">Mongoose</text>
+<text x="-130.59649658203125" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(354, 579) rotate(37.999628015244326)">Back-End</text>
+<text x="-97.74425506591797" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(561, 138)">Node.js</text>
+<text x="-128.93621826171875" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(579, 78)">MongoDB</text>
+<text x="-93.29329681396484" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(771, 576)">Design</text>
+<text x="-90.92652130126953" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(270, 618)">jQuery</text>
+<text x="-87.50000762939453" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(783, 228)">HTML5</text>
+<text x="-90.53795623779297" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(225, 189) rotate(50.68549740067076)">NoSQL</text>
+<text x="-71.56843566894531" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(804, 492)">CSS3</text>
+<text x="-39.246063232421875" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(339, 444)">Git</text>
+<text x="-45.710540771484375" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(219, 306)">EJS</text>
+<text x="-39.246063232421875" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(471, 564)">Git</text>
+<text x="-56.59063720703125" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(825, 402) rotate(-73.20319233520915)">SEO</text>
+<text x="-30.90937042236328" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(660, 270)">UI</text>
+<text x="-40.55309295654297" y="7.065519999999999" style="font: normal 70.65520000000001px 'Chau Philomene One'" text-anchor="start" dy="27.926956521739136" opacity="1" fill="#d0d0d0" stroke="none" transform="translate(702, 150)">UX</text>
+</svg>
