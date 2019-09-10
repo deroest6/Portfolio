@@ -15,6 +15,18 @@
 }
 
 #nav a {
-  color: #fff9;
+  color: #ccc9;
   font-weight: bold;
+}
+
+.cover-lead {
+  font-size: 10rem;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 800;
+  margin-left: 2.5%;
+  margin-top: 5.5%;
+  color: #ccc8;
 }
