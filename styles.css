@@ -1,5 +1,70 @@
+/*****************        TYPOGRAPHY          *******************
 
+******************                            ******************/
+
+
+/* FF Meta Variable Demo Font */
+@font-face {
+  font-family: 'FF Meta VF';
+  src: url('https://variablefonts.monotype.com/MetaVariableDemo-Set.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal italic;
+  font-weight: 100 900;
+}
+
+/* @supports (font-variation-settings: normal) {
+  html {
+
+  }
+} */
+
+html {
+  font-family: 'FF Meta VF', sans-serif;
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+h1 {
+  font-family: 'FF Meta VF', sans-serif;
+  left: 73px;
+  top: 63px;
+  font-variation-settings:
+    'wght' 900.00,
+    'ital' 1.00;
+  font-size: 4em;
+  font-weight: 800;
+  margin-left: 2.5%;
+  margin-top: 5.5%;
+  color: #ccc8;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: .85em;
+}
+
+
+/*****************      COVER CONTAINER       *******************
+
+******************                            ******************/
 #cover {
+  font-size: 2rem;
   background: url(Nightscene.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,9 +89,91 @@
 }
 
 h1 {
+  font-family: 'FF Meta VF', sans-serif;
+  left: 73px;
+  top: 63px;
+  font-variation-settings:
+    'wght' 900.00,
+    'ital' 1.00;
   font-size: 4em;
   font-weight: 800;
   margin-left: 2.5%;
   margin-top: 5.5%;
   color: #ccc8;
+}
+
+/* Variable Font Settings  (play.typedetail.com) */
+
+
+
+/* text: Hello */
+#text1 {
+  font-family: 'FF Meta VF';
+  font-size: 141px;
+  position: absolute;
+  left: 73px;
+  top: 63px;
+  font-variation-settings:
+    'wght' 900.00,
+    'ital' 1.00;
+}
+
+/* text: My name is Jant… */
+#text5 {
+  font-family: 'FF Meta VF';
+  font-size: 49px;
+  position: absolute;
+  left: 74px;
+  top: 238px;
+  font-variation-settings:
+    'wght' 240.00,
+    'ital' 1.00;
+}
+
+/* text: About */
+#text6 {
+  font-family: 'FF Meta VF';
+  font-size: 75px;
+  position: absolute;
+  left: 504px;
+  top: 939px;
+  font-variation-settings:
+    'wght' 240.00,
+    'ital' 0.35;
+}
+
+/* text: Here I go again… */
+#text8 {
+  font-family: 'FF Meta VF';
+  font-size: 17px;
+  position: absolute;
+  left: 376px;
+  top: 659px;
+  font-variation-settings:
+    'wght' 344,
+    'ital' 0;
+}
+
+/* text: . */
+#text9 {
+  font-family: 'FF Meta VF';
+  font-size: 100px;
+  position: absolute;
+  left: 397px;
+  top: 101px;
+  font-variation-settings:
+    'wght' 476.00,
+    'ital' 0.35;
+}
+
+/* text: I'm a Full-Stac… */
+#text10 {
+  font-family: 'FF Meta VF';
+  font-size: 51px;
+  position: absolute;
+  left: 336px;
+  top: 565px;
+  font-variation-settings:
+    'wght' 236.00,
+    'ital' 1.00;
 }
