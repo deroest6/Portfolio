@@ -12,6 +12,14 @@
   <!-- CSS Styling -->
   <link rel="stylesheet" href="styles.css">
 
+  <!-- Stepper CSS -->
+  <link href="css/addons-pro/steppers.css" rel="stylesheet">
+  <!-- Stepper CSS - minified-->
+  <link href="css/addons-pro/steppers.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/18403ca758.js"></script>
+
   <meta name="description" content="Not sure what to say here just yet.">
   <title>Jantsen DeRoest Portfolio</title>
 </head>
@@ -22,48 +30,70 @@
     TOP CONTAINER
   -->
   <div id="cover" class="container-fluid">
-    <header>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Projects</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
-    </header>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">JD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarToggler" aria-controls="navbarToggler"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mr-auto" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
 
-  <main role="main" class="">
-    <!--
+  <!--
       ABOUT CONTAINER
     -->
-    <div id="about" class="container-fluid">
+  <div id="about" class="container-fluid">
 
-      <h2 class="lead">I'm a Full-Stack Developer.</h2>
+    <h2 class="lead">I'm a Full-Stack Developer.</h2>
 
-    </div>
-
-    <!--
-     PROJECTS CONTAINER
-   -->
-
-
-    <!--
-     FAVORITE QUOTE CONTAINER
-   -->
-
-  </main>
-
+  </div>
 
   <!--
+     PROJECTS CONTAINER
+   -->
+  < <!-- FAVORITE QUOTE CONTAINER -->
+
+    <!--</main>-->
+
+
+    <!--
     FOOTER
   -->
-  <footer>
-    <div class="">
-      <p><b>C</b> TwentyNineteen | Jantsen DeRoest</p>
-    </div>
-  </footer>
+    <footer>
+      <div class="">
+        <p><b>C</b> TwentyNineteen | Jantsen DeRoest</p>
+      </div>
+    </footer>
 
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="app.js" charset="utf-8"></script>
 </body>
 
 

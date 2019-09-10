@@ -1,5 +1,7 @@
 //jshint esversion:6
-
+//
+//  SERVER SIDE
+//
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -26,6 +28,16 @@ db.once('open', function() {
 
 
 
+
+
+
+
+
+
+
+//
+// Interactive Javascript
+//
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
