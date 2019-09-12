@@ -1,33 +1,43 @@
 /*****************        TYPOGRAPHY          *******************
 
 ******************                            ******************/
-
 /* Animated Cover Text */
 @keyframes bigger {
-  0% {font-variation-settings: "wght" 900, "wdth" 70, 'ital' 1.00; }
-  50% {font-variation-settings: "wght" 100, "wdth" 70, 'ital' 1.00; }
-  100% {font-variation-settings: "wght" 900, "wdth" 70, 'ital' 1.00; }
+  0% {
+    font-variation-settings: "wght"900, "wdth"70, 'ital'1.00;
+  }
+
+  50% {
+    font-variation-settings: "wght"100, "wdth"70, 'ital'1.00;
+  }
+
+  100% {
+    font-variation-settings: "wght"900, "wdth"70, 'ital'1.00;
+  }
 }
 
 h1 span {
-animation: bigger 1;
-animation-duration: 5s;
-animation-timing-function: ease;
-font-variation-settings: "wdth" 70;
-}
-h1 span:nth-child(2) {
-animation-delay: .1s
-}
-h1 span:nth-child(3) {
-animation-delay: .2s
-}
-h1 span:nth-child(4) {
-animation-delay: .3s
-}
-h1 span:nth-child(5) {
-animation-delay: .4s
+  animation: bigger 1;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  font-variation-settings: "wdth"70;
 }
 
+h1 span:nth-child(2) {
+  animation-delay: .1s
+}
+
+h1 span:nth-child(3) {
+  animation-delay: .2s
+}
+
+h1 span:nth-child(4) {
+  animation-delay: .3s
+}
+
+h1 span:nth-child(5) {
+  animation-delay: .4s
+}
 
 /* FF Meta Variable Font */
 @font-face {
@@ -44,32 +54,16 @@ animation-delay: .4s
 
   }
 } */
-
 html {
   font-family: 'FF Meta VF', sans-serif;
   font-size: 16px;
 }
 
-
-/* @media screen and (min-width: 1000px) {
-  h1 {
-    position: absolute;
-    margin-top: 10%;
-    top: 10px;
-    padding-top: none;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .cover-welcome {
-    margin-top: 7%;
-  }
-*/
 h1 {
   font-family: 'FF Meta VF', sans-serif;
   font-variation-settings:
-    'wght' 350.00,
-    'ital' 1.00;
+    'wght'350.00,
+    'ital'1.00;
   font-size: .8em;
   font-weight: 800;
   margin-left: 9.5%;
@@ -93,11 +87,14 @@ a {
   font-size: .27em;
 }
 
-
-
 /*****************      COVER CONTAINER       *******************
 
 ******************                            ******************/
+
+/* .container-relative {
+  display: relative;
+  height: 100%;
+} */
 
 #cover {
   font-size: 2rem;
@@ -106,7 +103,7 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   position: absolute;
   top: 0;
@@ -120,20 +117,26 @@ a {
   font-weight: bold;
 }
 
-
-
-.cover-welcome {
+.cover-hello {
   /*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);*/
   text-shadow: 0px 3px 0px #b2a98f,
-             0px 14px 10px rgba(0,0,0,0.15),
-             0px 24px 2px rgba(0,0,0,0.1),
-             0px 34px 30px rgba(0,0,0,0.1);
+    0px 14px 10px rgba(0, 0, 0, 0.15),
+    0px 24px 2px rgba(0, 0, 0, 0.1),
+    0px 34px 30px rgba(0, 0, 0, 0.1);
   font-size: 4em;
   font-variation-settings:
-    'wght' 900.00,
-    'ital' 1.00;
+    'wght'900.00,
+    'ital'1.00;
   padding-top: 25%;
 }
+
+.blankDiv {
+  height: 100vh;
+}
+/*****************      ABOUT CONTAINER       *******************
+
+******************                            ******************/
+
 
 /*****************     VARIABLE TEXT     *******************
 
@@ -142,53 +145,53 @@ a {
 #text1 {
   font-family: 'FF Meta VF';
   font-variation-settings:
-    'wght' 900.00,
-    'ital' 1.00;
+    'wght'900.00,
+    'ital'1.00;
 }
 
 /* text: My name is Jant… */
 #text5 {
   font-family: 'FF Meta VF';
   font-variation-settings:
-    'wght' 240.00,
-    'ital' 1.00;
+    'wght'240.00,
+    'ital'1.00;
 }
 
-/* text: About */
+/* text: About Header */
 #text6 {
   font-family: 'FF Meta VF';
   font-variation-settings:
-    'wght' 240.00,
-    'ital' 0.35;
+    'wght'240.00,
+    'ital'0.35;
 }
 
 /* text: Here I go again… */
 #text8 {
   font-family: 'FF Meta VF';
   font-variation-settings:
-    'wght' 344,
-    'ital' 0;
+    'wght'344,
+    'ital'0;
 }
 
 /* text: . */
 #text9 {
   font-family: 'FF Meta VF';
   font-variation-settings:
-    'wght' 476.00,
-    'ital' 0.35;
+    'wght'476.00,
+    'ital'0.35;
 }
 
 /* text: I'm a Full-Stac… */
 #text10 {
   font-family: 'FF Meta VF';
   font-variation-settings:
-    'wght' 236.00,
-    'ital' 1.00;
-}/*****************     VARIABLE TEXT END     *******************
+    'wght'236.00,
+    'ital'1.00;
+}
+
+/*****************     VARIABLE TEXT END     *******************
 
 ******************                            ******************/
-
-
 /*****************      MEDIA QUERIES         *******************
 
 ******************                            ******************/
@@ -204,9 +207,33 @@ a {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  html {
+  font-size: 38px
+  }
+  h1 {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  html {
+  font-size: 48px
+  }
+  h1 {
+    margin-left: 17%;
+  }
+}
+
 @media screen and (min-width: 700px) {
   h1 {
     position: absolute;
     margin-top: 10%;
     top: 10px;
   }
+
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  h1 {
+    margin-top: 21%;
+  }
+}
