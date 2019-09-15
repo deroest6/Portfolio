@@ -145,7 +145,7 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
 ******************                            ******************/
 
 #about {
-  height: 90vh;
+  height: 80%;
   background-color: #424242;
   margin-top: -3%;
   padding: 13%;
@@ -163,10 +163,11 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
 }
 
 .portrait-img {
-  /* height: auto; */
+  height: auto;
   max-width: 100%;
   width: 150px;
-  padding-bottom: 5%;
+  margin: 8% 6%;
+  border-radius: 50%;
   -webkit-box-shadow: 6px 10px 13px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 6px 10px 13px -8px rgba(0,0,0,0.75);
   box-shadow: 6px 10px 13px -8px rgba(0,0,0,0.75);
@@ -177,10 +178,18 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
 
 ******************                            ******************/
 
-#projects {
-  background-color: #424242;
+#work {
+  font-size: 2rem;
+  background-color: #3e755c;
+  padding-bottom: 1%;
+  padding: 13%;
+  height: 1400px;
 }
 
+#work h3 {
+  color: #fafafa;
+  font-size: 1.45em;
+}
 /*****************      FOOTER CONTAINER      *******************
 
 ******************                            ******************/
@@ -188,7 +197,8 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
 #footer {
   font-size: 1.15rem;
   background-color: #272451;
-  height: 70vh;
+  height: 70%;
+  padding: 10% 7% 1% 7%;
 }
 
 .copyright {
@@ -196,6 +206,42 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
   color: #9e9e9e
 }
 
+/*****************      CONTACT FORM      *******************
+
+******************                            ******************/
+/* input::before::after {
+  opacity: 0.5;
+  z-index: 3;
+} */
+
+.form-control {
+  padding: 7% 2%;
+  font-size: .35em;
+  background: transparent;
+  background-color: rgba(103, 58, 183,.5);
+  border: 1px solid #673ab7;
+  color: #e0e0e0;
+  border-radius: .15rem;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.btn-success {
+  background: transparent;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+0,2989d8+0,207cca+0,2989d8+0,2989d8+1,2989d8+1,9c27b0+100 */
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(left,  #1e5799 0%, #2989d8 0%, #2989d8 0%, #207cca 0%, #2989d8 0%, #2989d8 1%, #2989d8 1%, #9c27b0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #1e5799 0%,#2989d8 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#2989d8 1%,#2989d8 1%,#9c27b0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #1e5799 0%,#2989d8 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#2989d8 1%,#2989d8 1%,#9c27b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#9c27b0',GradientType=1 ); /* IE6-9 */
+  font-size: .35em;
+  padding: 3% 20%;
+  width: 100%;
+  border: 1px solid #673ab7;
+  border-radius: .15rem;
+}
 
 /*****************     VARIABLE TEXT     *******************
 
@@ -261,9 +307,41 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
   }
 }
 
+@media screen and (min-width: 700px) {
+  h1 {
+    position: absolute;
+    margin-top: 10%;
+    top: 10px;
+  }
+
+  #about p {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  h1 {
+    margin-top: 21%;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .btn-success {
+    width: 65%;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   html {
     font-size: 32px;
+  }
+  #about p {
+    font-size: .65em;
+    max-width: 60%;
+  }
+  .portrait-img {
+    width: 215px;
+    margin-top: 2.5%;
   }
 }
 
@@ -282,19 +360,5 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
   }
   h1 {
     margin-left: 17%;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  h1 {
-    position: absolute;
-    margin-top: 10%;
-    top: 10px;
-  }
-}
-
-@media screen and (min-width: 700px) and (max-width: 850px) {
-  h1 {
-    margin-top: 21%;
   }
 }
