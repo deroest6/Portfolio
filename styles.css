@@ -131,7 +131,6 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
 }
 
 .cover-hello {
-  /*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);*/
   text-shadow: 0px 3px 0px #b2a98f,
     0px 14px 10px rgba(0, 0, 0, 0.15),
     0px 24px 2px rgba(0, 0, 0, 0.1),
@@ -209,9 +208,17 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
   padding: 10% 7% 1% 7%;
 }
 
+#footer h3 {
+  color: #ccc;
+  font: bolder 1.25em 'Shadows Into Light', cursive;
+}
 .copyright {
   font-size: .25em;
   color: #9e9e9e
+}
+
+.btn-success {
+  text-align: center
 }
 
 /*****************      CONTACT FORM      *******************
@@ -220,7 +227,7 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
 
 .form-control {
   padding: 7% 2%;
-  font-size: .35em;
+  font-size: .45em;
   background: transparent;
   background-color: rgba(103, 58, 183,.5);
   border: 1px solid #673ab7;
@@ -230,10 +237,28 @@ box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
 
 .form-control:focus {
   background: rgb(155,41,176);
-background: radial-gradient(circle, rgba(155,41,176,0.4151785714285714) 35%, rgba(44,135,215,0.4174107142857143) 100%);
+  background: radial-gradient(circle, rgba(155,41,176,0.4151785714285714) 35%, rgba(44,135,215,0.4174107142857143) 100%);
 }
+
 .form-group {
   margin-bottom: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #e0e0e0!important;
+}
+
+::-moz-placeholder {
+    color: #e0e0e0!important;
+}
+
+::-ms-placeholder {
+    color: #e0e0e0!important;
+}
+
+::placeholder {
+    color: #e0e0e0!important;
+    opacity: 1 /* Firefox Fix */
 }
 
 .btn-success {
@@ -250,6 +275,8 @@ background: radial-gradient(circle, rgba(155,41,176,0.4151785714285714) 35%, rgb
   border: 1px solid #673ab7;
   border-radius: .15rem;
   color: #fff;
+  text-align: center!important;
+  margin-top: 5%;
 }
 
 .btn-success:focus {
@@ -358,6 +385,7 @@ background: radial-gradient(circle, rgba(155,41,176,0.4151785714285714) 35%, rgb
   }
   .form-control {
     padding: 11% 2%;
+    font-size: .35em;
   }
 }
 
