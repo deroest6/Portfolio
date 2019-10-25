@@ -222,18 +222,17 @@ background-color: rgba(0,0,0,.5);
 #work {
   font-size: 2rem;
   background-color: #3e755c;
-  padding-bottom: 1%;
+  padding-bottom: 8%;
+  margin-bottom: -2%;
   padding: 13%;
   padding-top: 18%;
-  background: url(assets/img/fireflies-mod.svg);
+  background: url(assets/img/fireflies-web.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: auto 100%;
   margin-top: -2px;
   overflow: visible;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
-
 }
 
 #work h3 {
@@ -343,7 +342,9 @@ background-color: rgba(0,0,0,.5);
   background-color: #021321;
   height: 70%;
   padding: 5% 7% 1% 7%;
-  margin-top: -8%;
+  margin-top: -18%;
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  padding-top: 18%;
 }
 
 #footer h3 {
@@ -522,6 +523,10 @@ textarea:focus, input:focus {
   }
   #about {
     margin-bottom: -15%;
+  }
+  #footer {
+    padding-top: 12%;
+    margin-top: -10%;
   }
 }
 
