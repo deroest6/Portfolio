@@ -430,61 +430,6 @@ textarea:focus, input:focus {
   color: #fff;
 }
 
-/*****************     VARIABLE TEXT     *******************
-
-******************                        ******************/
-
-/* text: Hello */
-#text1 {
-  font-family: 'FF Meta VF';
-  font-variation-settings:
-    'wght'900.00,
-    'ital'1.00;
-}
-
-/* text: My name is Jant… */
-#text5 {
-  font-family: 'FF Meta VF';
-  font-variation-settings:
-    'wght'240.00,
-    'ital'1.00;
-}
-
-/* text: About Header */
-#text6 {
-  font-family: 'FF Meta VF';
-  font-variation-settings:
-    'wght'240.00,
-    'ital'0.35;
-}
-
-/* text: Here I go again… */
-#text8 {
-  font-family: 'FF Meta VF';
-  font-variation-settings:
-    'wght'344,
-    'ital'0;
-}
-
-/* text: . */
-#text9 {
-  font-family: 'FF Meta VF';
-  font-variation-settings:
-    'wght'476.00,
-    'ital'0.35;
-}
-
-/* text: I'm a Full-Stac… */
-#text10 {
-  font-family: 'FF Meta VF';
-  font-variation-settings:
-    'wght'236.00,
-    'ital'1.00;
-}
-
-/*****************     VARIABLE TEXT END     *******************
-
-******************                            ******************/
 /*****************      MEDIA QUERIES         *******************
 
 ******************                            ******************/
