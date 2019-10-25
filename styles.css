@@ -176,12 +176,19 @@ background-color: rgba(0,0,0,.5);
 #about {
   height: 80%;
   background-color: #424242;
+  background-image: radial-gradient(#21252973, #21252900);
   margin-top: -3%;
-  padding: 13%;
+  margin-bottom: -20%;
+  padding: 7%;
+  padding-bottom: 13%;
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+  overflow: hidden;
+  /* transform: skewY(-6deg);
+  transform-origin: bottom right; */
 }
 
 #about p {
-  color: #929292;
+  color: #b9b9b9;
   line-height: 1.5;
   text-align: center;
   margin: auto;
@@ -192,15 +199,19 @@ background-color: rgba(0,0,0,.5);
   text-shadow: -15px 5px 20px #000;
 }
 
+.blastoise {
+  margin: 5px;
+}
+
 .portrait-img {
   height: auto;
   max-width: 100%;
   width: 150px;
   margin: 8% 6%;
   border-radius: 50%;
-  -webkit-box-shadow: 6px 10px 13px -8px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 10px 13px -8px rgba(0,0,0,0.75);
-  box-shadow: 6px 10px 13px -8px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 0px 20px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 20px 3px rgba(0,0,0,0.75);
+  box-shadow: 1px 0px 20px 3px rgba(0,0,0,0.75);
 }
 
 
@@ -213,11 +224,16 @@ background-color: rgba(0,0,0,.5);
   background-color: #3e755c;
   padding-bottom: 1%;
   padding: 13%;
+  padding-top: 18%;
   background: url(assets/img/fireflies-mod.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: auto 100%;
+  margin-top: -2px;
+  overflow: visible;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+
 }
 
 #work h3 {
@@ -324,9 +340,10 @@ background-color: rgba(0,0,0,.5);
 
 #footer {
   font-size: 1.15rem;
-  background-color: #272451;
+  background-color: #021321;
   height: 70%;
-  padding: 10% 7% 1% 7%;
+  padding: 5% 7% 1% 7%;
+  margin-top: -8%;
 }
 
 #footer h3 {
@@ -340,16 +357,13 @@ background-color: rgba(0,0,0,.5);
   margin-top: 5%;
 }
 
-.btn-success {
-  text-align: center
-}
 
 /*****************      CONTACT FORM      *******************
 
 ******************                            ******************/
 
 .form-control {
-  padding: 7% 2%;
+  padding: 5.5% 3%;
   font-size: .45em;
   background: transparent;
   background-color: rgba(103, 58, 183,.5);
@@ -408,7 +422,7 @@ textarea:focus, input:focus {
   border-radius: .15rem;
   color: #fff;
   text-align: center!important;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .btn-success:focus {
@@ -503,6 +517,12 @@ textarea:focus, input:focus {
   .btn-success {
     width: 65%;
   }
+  .portrait-img {
+    width: 250px;
+  }
+  #about {
+    margin-bottom: -15%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -514,12 +534,16 @@ textarea:focus, input:focus {
     max-width: 60%;
   }
   .portrait-img {
-    width: 215px;
+    width: 315px;
     margin-top: 2.5%;
+    margin-bottom: 2%;
   }
   .form-control {
-    padding: 11% 2%;
+    padding: 9% 2%;
     font-size: .35em;
+  }
+  .form-group {
+    margin-bottom: -5%;
   }
 }
 
