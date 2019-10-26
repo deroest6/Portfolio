@@ -112,6 +112,10 @@ a {
   color:white;
 }
 
+.full-stack p {
+  background-image: radial-gradient(#21252973, #21252900);
+}
+
 .shadows {
     font-variation-settings: 'wght'900.00, 'ital'1.00;
     text-transform: uppercase;
@@ -343,7 +347,8 @@ background-color: rgba(0,0,0,.5);
   height: 70%;
   padding: 5% 7% 1% 7%;
   margin-top: -18%;
-    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  background-image: radial-gradient(#9855b94f, #21252900);
   padding-top: 18%;
 }
 
