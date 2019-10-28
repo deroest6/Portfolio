@@ -10,13 +10,18 @@ const mongodb = require('mongodb');
 
 const app = express();
 
+// View engine setup
 app.set('view engine', 'ejs');
 
+// Body Parser Middleware
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+// Static Folder
 app.use(express.static("public"));
 
+// Mongoose Connection
 mongoose.connect('mongodb://localhost3000', {useNewUrlParser: true});
 
 var db = mongoose.connection;
