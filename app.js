@@ -2,13 +2,18 @@
 //
 //  SERVER SIDE
 //
+require('dotenv').config();
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
 const mongodb = require('mongodb');
 const nodemailer = require('nodemailer');
-
+const {
+  google
+} = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 const app = express();
 
 // View engine setup
@@ -34,31 +39,54 @@ app.use(express.static("public"));
 
 //TODO
 
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        auth: {
-          type: 'OAuth2',
-          user: process.env.GOOGLE_EMAIL,
-          pass: process.env.GOOGLE_EMAIL_PASS
-        }
-    });
+// Mail App
+const oauth2Client = new OAuth2(
+  process.env.ID, // ClientID
+  process.env.SECRET, // Client Secret
+  "https://developers.google.com/oauthplayground" // Redirect URL
+);
 
-    let mailOptions = {
-      from: 'jantsenderoest@gmail.com', //req.body.from
-      to: 'deroest6@gmail.com',
-      subject: 'Testing and testing',
-      text: 'IT works'
-    };
+oauth2Client.setCredentials({
+  refresh_token: "1//04qRmweTHWbiXCgYIARAAGAQSNwF-L9Ir354LD6arBXNeUXw6COVMdXrl5kqP07fv6sYq34m3WF5aBrbf_4sL3TbAiP6xQkbplMc"
+});
+const accessToken = oauth2Client.getAccessToken();
 
-    transporter.sendMail(mailOptions, function(err, data) {
-      if(err) {
-        console.log('Error Occured: ' + err);
-      } else {
-        console.log('Email Sent');
-      }
-    });
+// create reusable transporter object using the default SMTP transport
+const smtpTransport = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  auth: {
+    type: 'OAuth2', //service: - Guide Way
+    user: process.env.USER,
+    // pass: process.env.PASS,
+    clientId: process.env.ID,
+    clientSecret: process.env.SECRET,
+    refreshToken: "ya29.ImCpB005ZM1U2Tne6GmIgUMczXWw3aS0rIuhQk25pF1fa9zhj_bRPShxUhmBUpLDP8gItynSShZh8Oi6vRPAYV4XSIuBmtzRQOkfTSFGMCdNBJgge7385cdDRyPFMQPJg6M",
+    access_Token: accessToken //accessToken: - Guide Way
+  },
 
+});
+
+const mailOptions = {
+  from: process.env.USER,
+  to: 'deroest6@gmail.com',
+  subject: "Node.js Email with Secure OAuth",
+  generateTextFromHTML: true,
+  html: "<b>test</b>"
+};
+
+// transporter.sendMail(mailOptions, function(err, data) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log('Email Sent');
+//   }
+// });
+
+// Send Email - The Guides way
+smtpTransport.sendMail(mailOptions, (error, response) => {
+     error ? console.log(error) : console.log(response);
+     smtpTransport.close();
+});
 
 //
 // Interactive Javascript
