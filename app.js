@@ -22,29 +22,30 @@ app.use(bodyParser.urlencoded({
 // Static Folder
 app.use(express.static("public"));
 
-// Mongoose Connection
-mongoose.connect('mongodb://localhost3000', {useNewUrlParser: true});
-
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  // we're connected!
-});
+// // Mongoose Connection
+// mongoose.connect('mongodb://localhost3000', {useNewUrlParser: true});
+//
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', function() {
+//   // we're connected!
+// });
 
 
 //TODO
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.gmail.com',
         auth: {
+          type: 'OAuth2',
           user: process.env.GOOGLE_EMAIL,
           pass: process.env.GOOGLE_EMAIL_PASS
         }
     });
 
     let mailOptions = {
-      from: 'jantsenderoest@gmail.com',
+      from: 'jantsenderoest@gmail.com', //req.body.from
       to: 'deroest6@gmail.com',
       subject: 'Testing and testing',
       text: 'IT works'
