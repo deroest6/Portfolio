@@ -1,4 +1,4 @@
-//jshint esversion:6
+//jshint esversion:8
 //
 //  SERVER SIDE
 //
@@ -9,14 +9,14 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
 const mongodb = require('mongodb');
+// My Email Program
 const nodemailer = require('nodemailer');
-const {
-  google
-} = require("googleapis");
+const {google} = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
+
 const app = express();
 
-// View engine setup
+// View Engine Setup
 app.set('view engine', 'ejs');
 
 // Body Parser Middleware
@@ -40,54 +40,61 @@ app.use(express.static("public"));
 //TODO
 
 // Mail App
-const oauth2Client = new OAuth2(
-  process.env.ID, // ClientID
-  process.env.SECRET, // Client Secret
-  "https://developers.google.com/oauthplayground" // Redirect URL
-);
+async function main() {
 
-oauth2Client.setCredentials({
-  refresh_token: "1//04qRmweTHWbiXCgYIARAAGAQSNwF-L9Ir354LD6arBXNeUXw6COVMdXrl5kqP07fv6sYq34m3WF5aBrbf_4sL3TbAiP6xQkbplMc"
-});
-const accessToken = oauth2Client.getAccessToken();
+  const oauth2Client = new OAuth2(
+    process.env.ID, // ClientID
+    process.env.SECRET, // Client Secret
+    "https://developers.google.com/oauthplayground" // Redirect URL
+  );
 
-// create reusable transporter object using the default SMTP transport
-const smtpTransport = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  auth: {
-    type: 'OAuth2', //service: - Guide Way
-    user: process.env.USER,
-    // pass: process.env.PASS,
-    clientId: process.env.ID,
-    clientSecret: process.env.SECRET,
-    refreshToken: "ya29.ImCpB005ZM1U2Tne6GmIgUMczXWw3aS0rIuhQk25pF1fa9zhj_bRPShxUhmBUpLDP8gItynSShZh8Oi6vRPAYV4XSIuBmtzRQOkfTSFGMCdNBJgge7385cdDRyPFMQPJg6M",
-    access_Token: accessToken //accessToken: - Guide Way
-  },
+  const accessToken = oauth2Client.getAccessToken();
+  const tokens = await oauth2Client.refreshAccessToken();
 
-});
+  oauth2Client.setCredentials({
+    refresh_token: "1//04ay_JRpVDhjeCgYIARAAGAQSNwF-L9IrjuVYwIhOE0q2s9mNjYdWlW_e29gysMC1lDfmG6_MdmW1LngH2nmkI4fX6WMLdHNiUnU"
+  });
 
-const mailOptions = {
-  from: process.env.USER,
-  to: 'deroest6@gmail.com',
-  subject: "Node.js Email with Secure OAuth",
-  generateTextFromHTML: true,
-  html: "<b>test</b>"
-};
+  // const accessToken = tokens.credentials.access_token;
+  oauth2Client.getAccessToken();
+  console.log(accessToken);
 
-// transporter.sendMail(mailOptions, function(err, data) {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log('Email Sent');
-//   }
-// });
+  const smtpTransport = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    auth: {
+      type: 'OAuth2',
+      user: process.env.USER,
+      clientId: process.env.ID,
+      clientSecret: process.env.SECRET,
+      refreshToken: "1//04ay_JRpVDhjeCgYIARAAGAQSNwF-L9IrjuVYwIhOE0q2s9mNjYdWlW_e29gysMC1lDfmG6_MdmW1LngH2nmkI4fX6WMLdHNiUnU",
+      access_Token: accessToken
+    }
+  });
 
-// Send Email - The Guides way
-smtpTransport.sendMail(mailOptions, (error, response) => {
-     error ? console.log(error) : console.log(response);
-     smtpTransport.close();
-});
+  const mailOptions = {
+    from: process.env.USER,
+    to: 'deroest6@gmail.com',
+    subject: "Node.js Email with Secure OAuth",
+    generateTextFromHTML: true,
+    html: "<b>test</b>"
+  };
 
+  // transporter.sendMail(mailOptions, function(err, data) {
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log('Email Sent');
+  //   }
+  // });
+
+  // Send Email - The Guides way
+  smtpTransport.sendMail(mailOptions, (error, response) => {
+    error ? console.log(error) : console.log(response);
+    smtpTransport.close();
+  });
+
+}
+main().catch(console.error);
 //
 // Interactive Javascript
 //
