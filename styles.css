@@ -413,6 +413,18 @@ textarea:focus, input:focus {
     color: #fff!important;
 }
 
+@-webkit-keyframes autofill {
+    to {
+        color: white;
+        background: #673ab780;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
 .btn-success {
   background: transparent;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+0,2989d8+0,207cca+0,2989d8+0,2989d8+1,2989d8+1,9c27b0+100 */
