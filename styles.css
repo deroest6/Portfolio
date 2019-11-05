@@ -277,7 +277,7 @@ background-color: rgba(0,0,0,.5);
   overflow: hidden;
   margin-bottom: 0;
   background: black;
-  opacity: .6;
+  opacity: .8;
   border-radius: 5px;
 }
 
@@ -358,12 +358,45 @@ background-color: rgba(0,0,0,.5);
 }
 
 .copyright {
-  font-size: .275em;
+  font-size: .6em;
   color: #9e9e9e;
   margin-top: 5%;
 }
 
+.email-me {
+  font-size: .85em;
+  font-family: 'FF Meta VF', sans-serif;
+  font-variation-settings: 'wght'900.00, 'ital'1.00;
+  text-transform: uppercase;
+  padding: 2%;
+  background: -webkit-linear-gradient(#c8c8c8, #0d0d0d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.email-me:hover {
+  transform: scale(1.1);
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+.social-btn {
+  margin: 5px 10px;
+}
+
+.social-bar {
+  margin-bottom: 8%;
+}
+
+.zoom {
+  transition: all .3s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
 /*****************      CONTACT FORM      *******************
 
 ******************                            ******************/
