@@ -2,7 +2,7 @@
 //
 //  SERVER SIDE
 //
-require('dotenv').config();
+
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -15,6 +15,8 @@ const {google} = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 
 const app = express();
+
+require('dotenv').config();
 
 // View Engine Setup
 app.set('view engine', 'ejs');
@@ -94,8 +96,6 @@ async function main() {
 
 }
 main().catch(console.error);
-
-
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");

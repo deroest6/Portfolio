@@ -5,7 +5,7 @@
   <!-- Required Meta Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Not sure what to say here just yet.">
+  <meta name="description" content="Hi, the name is Jantsen DeRoest, some call me Chunky. This here is my portfolio, where I've attempted to oooh and wooo you 😄. If you've come looking for a Full-Stack Developer that's fun, friendly and loves creating spectacular experiences then lets chat.">
   <title>Jantsen DeRoest Portfolio</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,6 +15,9 @@
   <script src="https://kit.fontawesome.com/18403ca758.js"></script>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" /> -->
 </head>
 
@@ -66,9 +69,9 @@
     <div role="main" id="about" class="container-fluid">
       <div class="row align-items-center">
         <div class="col">
-          <img class="portrait-img img-fluid mx-auto d-block" src="assets\img\portrait-nature-web.png" alt="Portrait of Jantsen DeRoest - Tree Background">
+          <img class="portrait-img img-fluid mx-auto d-block wow animated zoomIn" src="assets\img\portrait-nature-web.png" alt="Portrait of Jantsen DeRoest - Tree Background">
           <h2 class="text-center"><b>I'm a <span class="full-stack">Full-Stack Developer.</span></b></h2>
-          <p>My passion is in the creation and design of things. My pipedream is for an extraterrestrial contact; preferrably a ship filled with pokemon coming to Earth. I'd settle for a ship with a Blastoise capable of dispersing Mtn Dew though.
+          <p>My passion is in the creation and design of things. My pipedream is for an extraterrestrial contact; preferrably a ship filled with pokemon coming to Earth. I'd settle for a ship with a Blastoise that's capable of dispersing MTN Dew though.
             <br>
 
             🚀🛸<img class="blastoise" src="assets/img/blastoise-thumb.png" height="35px" alt="Blastoise">
@@ -80,14 +83,14 @@
 
     <!-- WORK CONTAINER-->
     <div id="work" class="container-fluid overlay-cover">
-      <h2 class="text-center shadows"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span>r<span>y</span></h2>
+      <h2 class="text-center shadows wow animated lightSpeedIn gallery-title"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span>r<span>y</span></h2>
 
       <section class="gallery-block compact-gallery">
         <div class="container">
 
           <div class="row no-gutters overlay-cover">
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="https://www.signmeup.herokuapp.com/">
+              <a class="lightbox" href="https://signmeup.herokuapp.com/">
 
                 <img class="img-fluid image" src="assets/img/signmeup-preview.png">
                 <span class="description">
@@ -98,7 +101,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4 item zoom-on-hover">
-              <a class="lightbox" href="https://www.shareyoursecrets.herokuapp.com/">
+              <a class="lightbox" href="https://shareyoursecrets.herokuapp.com/">
                 <img class="img-fluid image" src="assets/img/secrets-preview-web.png">
                 <span class="description">
                   <span class="description-heading">Share Your Secrets</span>
@@ -112,7 +115,7 @@
                 <img class="img-fluid image" src="assets/img/dicegame-preview-web.png">
                 <span class="description">
                   <span class="description-heading">Dice Game</span>
-                  <span class="description-body">Tech Stack: Javascript</span>
+                  <span class="description-body">Tech Stack: HTML, CSS, Javascript</span>
                 </span>
               </a>
             </div>
@@ -181,6 +184,7 @@
       </section>
     </div>
 
+    <!-- In place of the absolute positioned div to keep the rest of the page positioned correctly -->
     <div class="container">
       <div class="row">
         <div></div>
@@ -189,30 +193,26 @@
   </main>
 
 
-
-
-
   <!-- FOOTER CONTAINER-->
   <footer id="footer" class="container-fluid">
-    <!-- CONTACT FORM -->
-    <div class="container">
+    <div class="row">
+      <div class="col text-center chat-box">
+        <h3 class="wow animated bounceInLeft">Wanna Chat?</h3>
 
-      <div class="row justify-content-center mx-auto">
-        <!-- <a class="email-me"href="mailto:jantsenderoest@gmail.com">Let's Talk<img src="asset/img/mail.svg" alt="Flying Paper Airplane Mail Icon"></a> -->
-        <a href="#" class="cryptedmail email-me zoom" data-name="jantsenderoest" data-domain="gmail" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+        <a href="#" class="cryptedmail email-me zoom wow animated bounceInLeft delay-1s slow" data-name="jantsenderoest" data-domain="gmail" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
       </div>
-      <div>
-        <div class="row">
-          <div class="col text-center social-bar">
-            <img class="social-btn zoom" src="assets/img/linkedin.svg" alt="Linkedin Logo" width="50px">
-            <img class="social-btn zoom" src="assets\img\github.svg" alt="GitHub Logo" width="50px">
-          </div>
-        </div>
+
+      <div class="col text-center social-bar">
+        <ul>
+          <li><img class="social-btn zoom wow animated bounceInRight" src="assets/img/linkedin.svg" alt="Linkedin Logo" width="75px"><a href="https://www.linkedin.com/in/jantsenderoest/"></a></li>
+          <li><img class="social-btn zoom wow animated bounceInRight git-icon" src="assets\img\github.svg" alt="GitHub Logo" width="75px"><a href="https://github.com/deroest6"></a></li>
+        </ul>
       </div>
+    </div>
+
       <p class="copyright text-center"><b>C</b> TwentyNineteen | Jantsen DeRoest</p>
+    </div>
   </footer>
-
-
 
 
 
@@ -229,7 +229,10 @@
       animation: 'slideIn'
     });
   </script>
-
+  <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+  <script>
+new WOW().init();
+</script>
   <script src="app.js" charset="utf-8"></script>
 </body>
 

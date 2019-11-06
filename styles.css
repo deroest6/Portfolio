@@ -154,6 +154,13 @@ background-color: rgba(0,0,0,.5);
 #nav a {
   color: #ccc9;
   font-weight: bold;
+  cursor: pointer;
+}
+
+#nav a:hover {
+  transform: scale(1.15);
+  transition: all .3s ease-in-out;
+  color: white;
 }
 
 .cover-hello {
@@ -193,7 +200,7 @@ background-color: rgba(0,0,0,.5);
 
 #about p {
   color: #b9b9b9;
-  line-height: 1.5;
+  line-height: 1.8;
   text-align: center;
   margin: auto;
 }
@@ -251,6 +258,11 @@ background-color: rgba(0,0,0,.5);
 
 #previous-button {
   display: hidden!important;
+}
+
+.gallery-title {
+  animation-duration: 2s;
+  animation-delay: .25s;
 }
 
 .baguetteBox-button {
@@ -354,7 +366,14 @@ background-color: rgba(0,0,0,.5);
 
 #footer h3 {
   color: #ccc;
-  font: bolder 1.25em 'Shadows Into Light', cursive;
+  font: bolder 2.25em 'Shadows Into Light', cursive;
+  animation-duration: 2s;
+  animation-delay: .25s;
+}
+
+.git-icon {
+  animation-duration: 2s;
+  animation-delay: .5s;
 }
 
 .copyright {
@@ -369,7 +388,7 @@ background-color: rgba(0,0,0,.5);
   font-variation-settings: 'wght'900.00, 'ital'1.00;
   text-transform: uppercase;
   padding: 2%;
-  background: -webkit-linear-gradient(#c8c8c8, #0d0d0d);
+  background: -webkit-linear-gradient(#ff00cd, #139292);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -383,11 +402,20 @@ background-color: rgba(0,0,0,.5);
 }
 
 .social-btn {
-  margin: 5px 10px;
+  margin: 5%;
 }
 
 .social-bar {
+  padding-top: 10%;
   margin-bottom: 8%;
+}
+
+.social-bar, li {
+  list-style: none;
+}
+
+.social-bar, ul {
+  padding: 0;
 }
 
 .zoom {
@@ -396,66 +424,6 @@ background-color: rgba(0,0,0,.5);
 
 .zoom:hover {
   transform: scale(1.1);
-}
-/*****************      CONTACT FORM      *******************
-
-******************                            ******************/
-
-.form-control {
-  padding: 5.5% 3%;
-  font-size: .45em;
-  background: transparent;
-  background-color: rgba(103, 58, 183,.5);
-  border: 1px solid #673ab7;
-  color: #e0e0e0;
-  border-radius: .25em;
-}
-
-
-.form-control:focus {
-  background: rgb(155,41,176);
-  background: radial-gradient(circle, rgba(155,41,176,0.4151785714285714) 35%, rgba(44,135,215,0.4174107142857143) 100%);
-}
-
-.form-group {
-  margin-bottom: 0;
-}
-
-::-webkit-input-placeholder {
-    color: #e0e0e0!important;
-}
-
-::-moz-placeholder {
-    color: #e0e0e0!important;
-}
-
-::-ms-placeholder {
-    color: #e0e0e0!important;
-}
-
-::placeholder {
-    color: #e0e0e0!important;
-    opacity: 1 /* Firefox Fix */
-}
-
-input, select, textarea{
-    color: #fff!important;
-}
-
-textarea:focus, input:focus {
-    color: #fff!important;
-}
-
-@-webkit-keyframes autofill {
-    to {
-        color: white;
-        background: #673ab780;
-    }
-}
-
-input:-webkit-autofill {
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both;
 }
 
 .btn-success {
@@ -501,6 +469,9 @@ input:-webkit-autofill {
   #about p {
     max-width: 70%;
   }
+  .chat-box {
+    margin-left: 8%;
+  }
 }
 
 @media screen and (min-width: 700px) and (max-width: 850px) {
@@ -544,6 +515,18 @@ input:-webkit-autofill {
   }
   .form-group {
     margin-bottom: -5%;
+  }
+  .copyright {
+    font-size: .35em;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  #footer h3 {
+    line-height: 2;
+  }
+  .chat-box {
+    margin-top: -2.5%;
   }
 }
 
