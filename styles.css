@@ -455,6 +455,10 @@ background-color: rgba(0,0,0,.5);
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
+
+  #nav a:hover {
+    transform: none;
+  }
 }
 
 @media screen and (min-width: 700px) {

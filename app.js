@@ -1,9 +1,11 @@
 //jshint esversion:8
+
+  // Animations load as needed when user scrolls down
+new WOW().init();
+
 //
 //  SERVER SIDE
 //
-
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -96,6 +98,8 @@ async function main() {
 
 }
 main().catch(console.error);
+
+
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
