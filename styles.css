@@ -158,7 +158,6 @@ background-color: rgba(0,0,0,.5);
 }
 
 #nav a:hover {
-  transform: scale(1.15);
   transition: all .3s ease-in-out;
   color: white;
 }
@@ -455,10 +454,6 @@ background-color: rgba(0,0,0,.5);
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
-
-  #nav a:hover {
-    transform: none;
-  }
 }
 
 @media screen and (min-width: 700px) {
@@ -522,6 +517,9 @@ background-color: rgba(0,0,0,.5);
   }
   .copyright {
     font-size: .35em;
+  }
+  #nav a:hover {
+    transform: scale(1.15);
   }
 }
 
