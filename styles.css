@@ -450,7 +450,7 @@ background-color: rgba(0,0,0,.5);
 /*****************     Animate On Scroll      *******************
 
 ******************                            ******************/
-[data-aos="slide-in-left"] {
+/* [data-aos="slide-in-left"] {
   transform: translateY(200px);
   transition-property: transform;
 }
@@ -461,7 +461,7 @@ background-color: rgba(0,0,0,.5);
 
 @keyframes slide {
     100% { left: 0; }
-}
+} */
 
 /*****************      MEDIA QUERIES         *******************
 
