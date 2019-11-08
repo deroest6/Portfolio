@@ -1,8 +1,5 @@
 //jshint esversion:8
-
-  // Animations load as needed when user scrolls down
-new WOW().init();
-
+AOS.init();
 //
 //  SERVER SIDE
 //

@@ -19,7 +19,8 @@
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <!-- Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+  <!-- Animate on Scroll Library (AOS) -->
+  <link rel="stylesheet" href="aos-master\dist\aos.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97407096-1"></script>
 <script>
@@ -79,8 +80,8 @@
     <!-- ABOUT CONTAINER -->
     <div role="main" id="about" class="container-fluid">
       <div class="row align-items-center">
-        <div class="col">
-          <img class="portrait-img img-fluid mx-auto d-block wow animated zoomIn" src="Assets\img\portrait-nature-web.png" alt="Portrait of Jantsen DeRoest - Tree Background">
+        <div data-aos="zoom-in" class="col">
+          <img data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true" class="portrait-img img-fluid mx-auto d-block" src="Assets\img\portrait-nature-web.png" alt="Portrait of Jantsen DeRoest - Tree Background">
           <h2 class="text-center"><b>I'm a <span class="full-stack">Full-Stack Developer.</span></b></h2>
           <p>My passion is in the creation and design of things. My pipedream is for an extraterrestrial contact; preferrably a ship filled with pokemon coming to Earth. I'd settle for a ship with a Blastoise that's capable of dispersing MTN Dew though.
             <br>
@@ -94,7 +95,7 @@
 
     <!-- WORK CONTAINER-->
     <div id="work" class="container-fluid overlay-cover">
-      <h2 class="text-center shadows wow animated lightSpeedIn gallery-title"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span>r<span>y</span></h2>
+      <h2 class="text-center shadows gallery-title" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300" data-aos-mirror="true"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span>r<span>y</span></h2>
 
       <section class="gallery-block compact-gallery">
         <div class="container">
@@ -208,15 +209,15 @@
   <footer id="footer" class="container-fluid">
     <div class="row">
       <div class="col text-center chat-box">
-        <h3 class="wow animated bounceInLeft">Wanna Chat?</h3>
+        <h3 data-aos="zoom-in-right">Wanna Chat?</h3>
 
-        <a href="#" class="cryptedmail email-me zoom wow animated bounceInLeft delay-1s slow" data-name="jantsenderoest" data-domain="gmail" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+        <a href="#" class="cryptedmail email-me zoom" data-name="jantsenderoest" data-domain="gmail" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;" data-aos="zoom-in-right" data-aos-duration="1500"></a>
       </div>
 
       <div class="col text-center social-bar">
         <ul>
-          <li><img class="social-btn zoom wow animated bounceInRight" src="Assets/img/linkedin.svg" alt="Linkedin Logo" width="75px"><a href="https://www.linkedin.com/in/jantsenderoest/"></a></li>
-          <li><img class="social-btn zoom wow animated bounceInRight git-icon" src="Assets\img\github.svg" alt="GitHub Logo" width="75px"><a href="https://github.com/deroest6"></a></li>
+          <li><img class="social-btn zoom" src="Assets/img/linkedin.svg" alt="Linkedin Logo" width="75px" data-aos="zoom-in-left" data-aos-duration="1500"><a href="https://www.linkedin.com/in/jantsenderoest/"></a></li>
+          <li><img class="social-btn zoom git-icon" src="Assets\img\github.svg" alt="GitHub Logo" width="75px" data-aos="zoom-in-left" data-aos-duration="1500"><a href="https://github.com/deroest6"></a></li>
         </ul>
       </div>
     </div>
@@ -233,8 +234,10 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <!-- WoW Libray -->
-  <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+  <!-- Animate on Scroll (AOS) -->
+  <script src="aos-master\dist\aos.js"></script>
+
+
 
   <script src="app.js" charset="utf-8"></script>
 </body>
