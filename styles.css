@@ -565,3 +565,10 @@ background-color: rgba(0,0,0,.5);
     margin-left: 17%;
   }
 }
+
+  /* CSS specific to iOS devices */
+@supports (-webkit-overflow-scrolling: touch) {
+  #about {
+    margin-top: -5%;
+  }
+}
