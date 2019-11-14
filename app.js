@@ -1,5 +1,5 @@
 //jshint esversion:8
-AOS.init();
+
 //
 //  SERVER SIDE
 //
