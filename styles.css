@@ -107,7 +107,6 @@ a {
   bottom:0;
   background: transparent;
   background-color:rgba(0, 0, 0, 0.85);
-  background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
   z-index:9999;
   color:white;
 }
@@ -370,14 +369,17 @@ background-color: rgba(0,0,0,.5);
   animation-delay: .25s;
 }
 
+.linkedin-icon {
+  width: 48px;
+}
+
 .git-icon {
-  animation-duration: 2s;
-  animation-delay: .5s;
+  width:50px
 }
 
 .copyright {
   font-size: .6em;
-  color: #9e9e9e;
+  color: #666666;
   margin-top: 5%;
 }
 
@@ -403,6 +405,10 @@ background-color: rgba(0,0,0,.5);
 .social-btn {
   margin: 5%;
 }
+
+/* .social-btn .zoom:hover {
+  cursor: pointer;
+} */
 
 .social-bar {
   padding-top: 10%;
@@ -536,6 +542,12 @@ background-color: rgba(0,0,0,.5);
   }
   #nav a:hover {
     transform: scale(1.15);
+  }
+  .linkedin-icon {
+    width: 72px;
+  }
+  .git-icon {
+    width:75px;
   }
 }
 
