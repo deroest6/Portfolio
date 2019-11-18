@@ -463,6 +463,9 @@ background-color: rgba(0,0,0,.5);
   }
   .email-me[data-aos-offset= '220'] {
   }
+  #footer {
+    padding: 5% 0;
+  }
 }
 
 @media screen and (min-width: 700px) {
