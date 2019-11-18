@@ -568,7 +568,10 @@ background-color: rgba(0,0,0,.5);
 
   /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
+  .chat-box {
+    margin-top: -10%;
+  }
   #about {
-    margin-top: -5%;
+    margin-top: -15%;
   }
 }
