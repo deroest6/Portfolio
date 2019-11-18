@@ -574,4 +574,10 @@ background-color: rgba(0,0,0,.5);
   #about {
     margin-top: -15%;
   }
+  #cover {
+    margin-bottom: -5%;
+  }
+  #footer {
+    height: 90%;
+  }
 }
