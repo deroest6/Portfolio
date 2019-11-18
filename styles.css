@@ -186,7 +186,7 @@ background-color: rgba(0,0,0,.5);
   height: 80%;
   background-color: #424242;
   background-image: radial-gradient(#00000052, #21252900);
-  margin-top: -3%;
+  margin-top: -8%;
   margin-bottom: -20%;
   padding: 7%;
   padding-bottom: 13%;
@@ -548,6 +548,9 @@ background-color: rgba(0,0,0,.5);
   }
   .git-icon {
     width:75px;
+  }
+  #about {
+    margin-top: -6%;
   }
 }
 
