@@ -461,6 +461,11 @@ background-color: rgba(0,0,0,.5);
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
+  .email-me[data-aos-offset= '220'] {
+  }
+  #footer {
+    padding: 5% 0;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -567,11 +572,24 @@ background-color: rgba(0,0,0,.5);
 }
 
   /* CSS specific to iOS devices */
-@supports (-webkit-overflow-scrolling: touch) {
+/* @supports (-webkit-overflow-scrolling: touch) {
   .chat-box {
     margin-top: -10%;
   }
   #about {
     margin-top: -15%;
+    padding-bottom: 5%;
   }
-}
+  #cover {
+    margin-bottom: -5%;
+  }
+  #footer {
+    height: 90%;
+  }
+  .email-me[data-aos-offset= '220'] {
+  }
+  #cover {
+    background-size: contain;
+    background-color: yellow;
+  }
+} */
