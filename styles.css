@@ -461,6 +461,8 @@ background-color: rgba(0,0,0,.5);
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
+  .email-me[data-aos-offset= '220'] {
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -582,5 +584,9 @@ background-color: rgba(0,0,0,.5);
     height: 90%;
   }
   .email-me[data-aos-offset= '220'] {
+  }
+  #cover {
+    background-size: contain;
+    background-color: yellow;
   }
 }
