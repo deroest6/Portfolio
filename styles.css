@@ -453,21 +453,6 @@ background-color: rgba(0,0,0,.5);
   color: #fff;
 }
 
-/*****************     Animate On Scroll      *******************
-
-******************                            ******************/
-/* [data-aos="slide-in-left"] {
-  transform: translateY(200px);
-  transition-property: transform;
-}
-
-@-webkit-keyframes [data-aos="slide-in-left"] {
-    100% { left: 0; }
-}
-
-@keyframes slide {
-    100% { left: 0; }
-} */
 
 /*****************      MEDIA QUERIES         *******************
 
