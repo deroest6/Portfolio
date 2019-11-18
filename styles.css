@@ -581,4 +581,6 @@ background-color: rgba(0,0,0,.5);
   #footer {
     height: 90%;
   }
+  .email-me[data-aos-offset= '220'] {
+  }
 }
