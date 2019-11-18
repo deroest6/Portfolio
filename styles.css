@@ -463,6 +463,8 @@ background-color: rgba(0,0,0,.5);
   }
   .email-me[data-aos-offset= '220'] {
   }
+  .email-me[data-aos-anchor-placement= 'top-top']{
+  }
   #footer {
     padding: 5% 0;
   }
