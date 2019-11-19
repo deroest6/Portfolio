@@ -453,7 +453,6 @@ a {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
-
   .email-me[data-aos-offset='220'] {}
 
   .email-me[data-aos-anchor-placement='top-top'] {}
