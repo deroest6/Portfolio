@@ -463,6 +463,8 @@ background-color: rgba(0,0,0,.5);
   }
   .email-me[data-aos-offset= '220'] {
   }
+  .email-me[data-aos-anchor-placement= 'top-top']{
+  }
   #footer {
     padding: 5% 0;
   }
@@ -572,7 +574,7 @@ background-color: rgba(0,0,0,.5);
 }
 
   /* CSS specific to iOS devices */
-/* @supports (-webkit-overflow-scrolling: touch) {
+@supports (-webkit-overflow-scrolling: touch) {
   .chat-box {
     margin-top: -10%;
   }
@@ -592,4 +594,4 @@ background-color: rgba(0,0,0,.5);
     background-size: contain;
     background-color: yellow;
   }
-} */
+}
