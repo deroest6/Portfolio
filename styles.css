@@ -182,7 +182,7 @@ a {
   background-color: #424242;
   background-image: radial-gradient(#00000052, #21252900);
   margin-top: -8%;
-  margin-bottom: -20%;
+  margin-bottom: -22%;
   padding: 7%;
   padding-bottom: 13%;
   clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
@@ -453,7 +453,9 @@ a {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
-
+  .about-me-container {
+    padding-bottom: 8%;
+  }
   .email-me[data-aos-offset='220'] {}
 }
 
