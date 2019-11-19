@@ -1,7 +1,6 @@
 /*****************        TYPOGRAPHY          *******************
 
 ******************                            ******************/
-
 /* Animated Cover Text */
 @keyframes bigger {
   0% {
@@ -55,7 +54,6 @@ h1 span:nth-child(5) {
 
   }
 } */
-
 html {
   font-family: 'FF Meta VF', sans-serif;
   font-size: 16px;
@@ -98,17 +96,16 @@ a {
 /*****************      COVER CONTAINER       *******************
 
 ******************                            ******************/
-
 .overlay {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: transparent;
-  background-color:rgba(0, 0, 0, 0.85);
-  z-index:9999;]
-  color:white;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  ] color: white;
 }
 
 .full-stack p {
@@ -116,18 +113,18 @@ a {
 }
 
 .shadows {
-    font-variation-settings: 'wght'900.00, 'ital'1.00;
-    text-transform: uppercase;
-    text-shadow: -15px 5px 20px #000;
-    color: #775179;
-    letter-spacing: -0.05em;
-    font-family: 'FF Meta VF', sans-serif;
-    text-transform: uppercase;
-    transition: all 0.25s ease-out;
+  font-variation-settings: 'wght'900.00, 'ital'1.00;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #000;
+  color: #775179;
+  letter-spacing: -0.05em;
+  font-family: 'FF Meta VF', sans-serif;
+  text-transform: uppercase;
+  transition: all 0.25s ease-out;
 }
 
 .shadows:hover {
-  text-shadow: -16px 6px 15px black, -16px 10px 5px rgba(0,0,0,.5);
+  text-shadow: -16px 6px 15px black, -16px 10px 5px rgba(0, 0, 0, .5);
 }
 
 #cover {
@@ -144,10 +141,10 @@ a {
   left: 0;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Nightscene.svg', sizingMethod='scale')";
-  -webkit-box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
--moz-box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
-box-shadow: 0px 5px 13px -8px rgba(0,0,0,0.71);
-background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 5px 13px -8px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 5px 13px -8px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 5px 13px -8px rgba(0, 0, 0, 0.71);
+  background-color: rgba(0, 0, 0, .5);
 }
 
 #nav a {
@@ -177,11 +174,9 @@ background-color: rgba(0,0,0,.5);
   height: 100vh;
 }
 
-
 /*****************      ABOUT CONTAINER       *******************
 
 ******************                            ******************/
-
 #about {
   height: 80%;
   background-color: #424242;
@@ -218,16 +213,14 @@ background-color: rgba(0,0,0,.5);
   width: 150px;
   margin: 8% 6%;
   border-radius: 50%;
-  -webkit-box-shadow: 1px 0px 20px 3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 0px 20px 3px rgba(0,0,0,0.75);
-  box-shadow: 1px 0px 20px 3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 0px 20px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 20px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 0px 20px 3px rgba(0, 0, 0, 0.75);
 }
-
 
 /*****************      WORK CONTAINER      *******************
 
 ******************                            ******************/
-
 #work {
   font-size: 2rem;
   background-color: #3e755c;
@@ -249,13 +242,11 @@ background-color: rgba(0,0,0,.5);
   font-size: 1.45em;
 }
 
-
 /*****************        GALLERY         ********************
 
 ******************                        ********************/
-
 #previous-button {
-  display: hidden!important;
+  display: hidden !important;
 }
 
 .gallery-title {
@@ -273,14 +264,14 @@ background-color: rgba(0,0,0,.5);
 }
 
 .gallery-block .heading {
-    margin-bottom: 50px;
-    text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .gallery-block .heading h2 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 .gallery-block.compact-gallery .item {
@@ -302,37 +293,36 @@ background-color: rgba(0,0,0,.5);
 
 .gallery-block.compact-gallery .item .description {
   display: grid;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    padding: 10px;
-    font-size: 17px;
-    line-height: 18px;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    opacity: 1;
-    color: #fff;
-    transition: 0.8s ease;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: 1;
+  color: #fff;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
 }
 
-.gallery-block.compact-gallery .item .description .description-heading{
+.gallery-block.compact-gallery .item .description .description-heading {
   font-size: 1em;
   font-weight: bold;
 }
 
-.gallery-block.compact-gallery .item .description .description-body{
+.gallery-block.compact-gallery .item .description .description-body {
   font-size: 0.8em;
   margin-top: 10px;
   font-weight: 300;
 }
 
 @media (min-width: 576px) {
-
   .gallery-block.compact-gallery .item .description {
     opacity: 0;
   }
@@ -350,7 +340,6 @@ background-color: rgba(0,0,0,.5);
 /*****************      FOOTER CONTAINER      *******************
 
 ******************                            ******************/
-
 #footer {
   font-size: 1.15rem;
   background-color: #021321;
@@ -374,7 +363,7 @@ background-color: rgba(0,0,0,.5);
 }
 
 .git-icon {
-  width:50px
+  width: 50px
 }
 
 .copyright {
@@ -399,7 +388,7 @@ background-color: rgba(0,0,0,.5);
 }
 
 .cryptedmail:after {
-  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+  content: attr(data-name) "@"attr(data-domain) "."attr(data-tld);
 }
 
 .social-btn {
@@ -409,7 +398,6 @@ background-color: rgba(0,0,0,.5);
 /* .social-btn .zoom:hover {
   cursor: pointer;
 } */
-
 .social-bar {
   padding-top: 10%;
   margin-bottom: 8%;
@@ -434,25 +422,29 @@ background-color: rgba(0,0,0,.5);
 .btn-success {
   background: transparent;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+0,2989d8+0,207cca+0,2989d8+0,2989d8+1,2989d8+1,9c27b0+100 */
-  background: #1e5799; /* Old browsers */
-  background: -moz-linear-gradient(left,  #1e5799 0%, #2989d8 0%, #2989d8 0%, #207cca 0%, #2989d8 0%, #2989d8 1%, #2989d8 1%, #9c27b0 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  #1e5799 0%,#2989d8 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#2989d8 1%,#2989d8 1%,#9c27b0 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  #1e5799 0%,#2989d8 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#2989d8 1%,#2989d8 1%,#9c27b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#9c27b0',GradientType=1 ); /* IE6-9 */
+  background: #1e5799;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 0%, #2989d8 0%, #207cca 0%, #2989d8 0%, #2989d8 1%, #2989d8 1%, #9c27b0 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e5799 0%, #2989d8 0%, #2989d8 0%, #207cca 0%, #2989d8 0%, #2989d8 1%, #2989d8 1%, #9c27b0 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e5799 0%, #2989d8 0%, #2989d8 0%, #207cca 0%, #2989d8 0%, #2989d8 1%, #2989d8 1%, #9c27b0 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#9c27b0', GradientType=1);
+  /* IE6-9 */
   font-size: .35em;
   padding: 3% 20%;
   width: 100%;
   border: 1px solid #673ab7;
   border-radius: .15rem;
   color: #fff;
-  text-align: center!important;
+  text-align: center !important;
   margin-top: 10%;
 }
 
 .btn-success:focus {
   color: #fff;
 }
-
 
 /*****************      MEDIA QUERIES         *******************
 
@@ -461,10 +453,9 @@ background-color: rgba(0,0,0,.5);
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
-  .email-me[data-aos-offset= '220'] {
-  }
-  .email-me[data-aos-anchor-placement= 'top-top']{
-  }
+
+  .email-me[data-aos-offset='220'] {}
+
   #footer {
     padding: 5% 0;
   }
@@ -476,12 +467,15 @@ background-color: rgba(0,0,0,.5);
     margin-top: 10%;
     top: 10px;
   }
+
   h2 {
     font-size: 3em;
   }
+
   #about p {
     max-width: 70%;
   }
+
   .chat-box {
     margin-left: 8%;
   }
@@ -497,12 +491,15 @@ background-color: rgba(0,0,0,.5);
   .btn-success {
     width: 65%;
   }
+
   .portrait-img {
     width: 250px;
   }
+
   #about {
     margin-bottom: -15%;
   }
+
   #footer {
     padding-top: 12%;
     margin-top: -10%;
@@ -513,34 +510,43 @@ background-color: rgba(0,0,0,.5);
   html {
     font-size: 32px;
   }
+
   #about p {
     font-size: .65em;
     max-width: 60%;
   }
+
   .portrait-img {
     width: 315px;
     margin-top: 2.5%;
     margin-bottom: 2%;
   }
+
   .form-control {
     padding: 9% 2%;
     font-size: .35em;
   }
+
   .form-group {
     margin-bottom: -5%;
   }
+
   .copyright {
     font-size: .35em;
   }
+
   #nav a:hover {
     transform: scale(1.15);
   }
+
   .linkedin-icon {
     width: 72px;
   }
+
   .git-icon {
-    width:75px;
+    width: 75px;
   }
+
   #about {
     margin-top: -6%;
   }
@@ -550,6 +556,7 @@ background-color: rgba(0,0,0,.5);
   #footer h3 {
     line-height: 2;
   }
+
   .chat-box {
     margin-top: -2.5%;
   }
@@ -557,8 +564,9 @@ background-color: rgba(0,0,0,.5);
 
 @media screen and (min-width: 1500px) {
   html {
-  font-size: 38px
+    font-size: 38px
   }
+
   h1 {
     margin-left: 15%;
   }
@@ -566,32 +574,27 @@ background-color: rgba(0,0,0,.5);
 
 @media screen and (min-width: 2400px) {
   html {
-  font-size: 48px
+    font-size: 48px
   }
+
   h1 {
     margin-left: 17%;
   }
 }
 
-  /* CSS specific to iOS devices */
+/* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
   .chat-box {
     margin-top: -10%;
   }
-  #about {
-    margin-top: -15%;
-    padding-bottom: 5%;
+
+  .email-me[data-aos-offset='220'] {}
+
+  .chat-box {
+    margin-top: -10%;
   }
-  #cover {
-    margin-bottom: -5%;
-  }
-  #footer {
-    height: 90%;
-  }
-  .email-me[data-aos-offset= '220'] {
-  }
+
   #cover {
     background-size: contain;
-    background-color: yellow;
   }
 }
